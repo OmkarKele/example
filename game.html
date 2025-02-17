@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Guessing Game</h1>
+        <div class="game-area">
+            <p>Your Score: <span id="score">0</span> Points</p>
+            <p>Available Coins: <span id="available-points">1000</span></p>
+            <input type="number" id="bet-amount" placeholder="Enter bet amount">
+            <div class="color-options">
+                <button class="color-btn red" onclick="placeBet('red')">Red</button>
+                <button class="color-btn blue" onclick="placeBet('blue')">Blue</button>
+                <button class="color-btn green" onclick="placeBet('green')">Green</button>
+                <button class="color-btn yellow" onclick="placeBet('yellow')">Yellow</button>
+            </div>
+            <p id="result-message"></p>
+        </div>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+  
+
+    <script src="game.js"></script>
+</body>
+</html>
